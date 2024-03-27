@@ -105,7 +105,6 @@ function fin(){
         text: `Sr(a) ${name.value}\n Su pedido sera enviado a ${dir.value}\nSe le enviara un correo con la informacion de despacho (WIP)`  ,
         icon: "success"
     });
-    console.log("antes");
       moment().locale('es');
       let data = {
         service_id: 'service_omrt1ic',
@@ -127,9 +126,9 @@ function fin(){
         data: JSON.stringify(data),
         contentType: 'application/json'
       }).done(function() {
-        alert('Your mail is sent!');
+        console.log('Your mail is sent!');
       }).fail(function(error) {
-        alert('Oops... ' + JSON.stringify(error));
+        console.log('Oops... ' + JSON.stringify(error));
       });
     const clear = document.getElementById("checkpage");
     clear.innerHTML = '';
