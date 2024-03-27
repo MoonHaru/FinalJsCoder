@@ -1,0 +1,232 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+button{
+    background-color: rgb(255, 255, 255); /* Green */
+    border: none;
+    color: #a10aec;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+
+body{
+    background: #f9b2cd;
+    width: auto;
+}
+body.showCart .cartTab{
+    display: grid;
+}
+
+
+
+body.showCart main{
+    transition: transform .5s;
+}
+img{
+    width: 250px;
+}
+svg{
+    width: 40px;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+header .h11{
+    display: flex;
+}
+header .icon-cart{
+    position: relative;
+}
+header .icon-cart span{
+    display: flex;
+    width: 20px;
+    height: 31px;
+    background-color: red;
+    justify-self: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    padding-left: 25%;
+    position: absolute;
+    top: 50%;
+}
+main{
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+main #checkpage{
+    position: fixed;
+    align-self: center;
+    inset: 50% 50% 50% 50%;
+    width: 280px;
+}
+main #checkpage span{
+    display: inline;
+    font-weight: 600;
+    background-color: transparent;
+    font-size: 2em;
+}
+
+main #checkpage #title{
+    font-weight: 800;
+    position: fixed;
+    inset: 32% 50% 50% 50%;
+}
+main #content{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);   
+    gap: 30px;
+    width: 30%;
+    margin-left: 7%;
+}
+main #Instruction{
+    position: absolute;
+    margin-top: -3%;
+    margin-left: 33.5%;
+    font-size: 1.3em;
+}
+main section .producto{
+text-align: left;
+line-height: 0px;
+}
+
+main #showcase{
+    align-self: center;
+    padding-left: 10px;
+}
+main #showcase #pImg{
+    width: 20%px;
+    margin-left: 9%;
+}
+main #showcase #pVolu{
+    position: absolute;
+    padding-left: 400px;
+    margin-top: -300px;
+    font-size: 1.3em;
+}
+main #showcase #pPrice{
+    position: absolute;
+    padding-left: 400px;
+    margin-top: -280px;
+    font-size: 1.3em;
+}
+main #showcase #pStock{
+    position: absolute;
+    padding-left: 400px;
+    margin-top: -240px;
+    font-size: 1.3em;
+}
+main #showcase #pGrade{
+    position: absolute;
+    padding-left: 400px;
+    margin-top: -260px;
+    font-size: 1.3em;
+}
+
+
+main #showcase #pName{
+    position: absolute;
+    padding-left: 390px;
+    margin-top: -5%;   
+    font-size: 2em;
+}
+
+.cartTab{
+    width: 400px;
+    background-color: #ffffffb5;
+    position: fixed;
+    inset: 0 0 0 auto;
+    display: grid;
+    grid-template-rows: 1fr ;
+    transition: .5s;
+    display: none;
+
+}
+
+#cartList #cartItem{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+.cartProduct:nth-child(even){
+    background-color: #ffa9a9ae;
+}
+.cartProduct{
+    background-color: #ffa9a957;
+}
+#cartList{
+    overflow: auto;
+}
+#cartList::-webkit-scrollbar{
+    width: 0;
+}
+span{
+    display:inline-block;
+    width: 20px;
+    background-color: rgb(84, 249, 233);
+    color: #000;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+.cartTab #closebutt{
+    background-color: rgb(0, 0, 0); /* Green */
+    border-radius: 50%;
+    color: #fff;
+    padding: 3px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    inset: 38px 2px auto auto;
+    font-weight: 900;
+}
+.cartTab #checkoutbutt{
+    background-color: rgb(179, 162, 255); /* Green */
+    border: 25%;
+    color: #000;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;    
+}
+.cartTab h1{
+    font-weight: 300;
+}
+#cartimage img {
+    width: 100%;
+}
+.text{
+    font-weight:400;
+    display: inline;
+    margin: 10px;
+}
+#totalCarro{
+    position: absolute;
+    inset: 10px 100px 0 auto;
+}.producto:nth-child(even){
+    background-color: rgba(255, 255, 255, 0.25);
+}  
+.producto{
+    border-radius: 12%;
+    background-color:  rgba(255, 255, 255, 0.35);
+}   
+
+.producto:hover{
+    box-shadow: 0px 0px 20px 0cap #ff80006c;
+}
+
+.productoDesc h5{
+    text-align: center;
+}
